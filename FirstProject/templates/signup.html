@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>ABC Education</title>
+<link rel="stylesheet" href="../static/css/aboutstyle.css">
+<head>
+</head>
+<body background="../static/img/background.jpg">
+    <header>
+        <img src="../static/img/logo.png" width="7%" height="5%">
+        <div class="head-tag">
+            <a href="home1">Home</a>
+            <a href="#">Sign Up</a>
+            <a href="aboutus">About us</a>
+            <a href="loginpage">Login</a>
+        </div>
+    </header>
+<h1>Sign Up</h1>
+<form action="/register" method="post">
+    <div class="signup">
+    <table>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                <input type="text" name="stdname" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address 
+            </td>
+            <td>
+                <textarea name="stdaddress" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender
+            </td>
+            <td>
+                <select name="gender" id="gender" required>
+                    <option value="">--SELECT--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                  </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Phone Number
+            </td>
+            <td>
+                <input type="text" name="phone" size="12" required>
+            </td>
+        </tr>
+       
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                <input type="email" name="email" required>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                <input type="password" name="password" required>
+                
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit"><p>{{addmsg}}</p>
+            </td>
+        </tr>
+        
+    </table>
+   
+</div>
+
+    
+</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>ABC Education</title>
+<head>
+    <link rel="stylesheet" href="../static/css/aboutstyle.css">
+</head>
+<body background="../static/img/background.jpg">
+    <header>
+        <img src="../static/img/logo.png" width="7%" height="5%">
+        <div class="head-tag">
+            <a href="home1">Home</a>
+            <a href="">Courses</a>
+            <a href="home1">Logout</a>
+        </div>
+    </header>
+    <h1>Our Courses</h1>
+    <div class="course">
+        <table>
+           
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Fee</th>
+                    <th></th>
+                </tr>
+            
+           {%for row in sqldata%}
+           <tr>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+            <td><a href="">View Details</a></td>
+           </tr>
+           {%endfor%}
+        </table>
+    </div>
+   
+</body>
+</html>

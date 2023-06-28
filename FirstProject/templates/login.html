@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>ABC Education</title>
+<head>
+    <link rel="stylesheet" href="../static/css/homestyle.css">
+</head>
+<body background="../static/img/background.jpg">
+    <header>
+        <img src="../static/img/logo.png" width="7%" height="5%">
+        <div class="head-tag">
+            <a href="home1">Home</a>
+            <a href="signup">Sign Up</a>
+            <a href="aboutus">About us</a>
+            <a href="">Login</a>
+        </div>
+    </header>
+    <div class="login">
+        <form action="/login" method="post">
+            <table>
+                <tr>
+                    <td><h2>Login</h2></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Email" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Password"  name="password" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Login"></td>
+                    
+                </tr>
+            </table>
+            {{msg}}
+        </form>
+    </div>
+</body>
+</html>
